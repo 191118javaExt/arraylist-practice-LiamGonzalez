@@ -19,6 +19,7 @@ public class Driver {
 			reglist.add(val);
 			mylist.add(val);
 		}
+		System.out.println(mylist.toString());
 		
 		long t1 = System.nanoTime();
 		
@@ -40,11 +41,11 @@ public class Driver {
 		for(int i = 0; i < AMOUNT; i++) {
 			mylist.set(i, AMOUNT % (2 * (i % 10) + 3));
 		}
-		
+		System.out.println(mylist.toString());
 		for(int i = 0; i < AMOUNT; i++) {
 			mylist.remove(0);
 		}
-		
+		System.out.println(mylist.toString());
 		t2 = System.nanoTime();
 		
 		long myTime = t2 - t1;
